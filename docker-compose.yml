@@ -1,0 +1,7 @@
+services:
+  app:
+    image: lunyaa/ganymede-hls-downloader
+    restart: unless-stopped
+    environment:
+      GANYMEDE_URL=<your ganymede base url>
+      TMP_PATH=/tmp
